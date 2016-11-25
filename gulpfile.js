@@ -41,10 +41,10 @@ gulp.task('jade', function() {
     .pipe(gulp.dest('./public/'))
 })
 
-gulp.task('sass', function () {
+gulp.task('sass', function() {
     gulp.src('./src/sass/*.sass')
     .pipe(sass().on('error', sass.logError))
     .pipe(concat('style.css'))
     .pipe(autoprefixer())
     .pipe(gulp.dest('./public/css'));
-});
+})

@@ -1,45 +1,67 @@
-include header
-    
+html
+  head
+    title YWC Game
+    meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="css/style.css")
+    script(src="js/app.js")
+  body
+    header
+      .top
+        | Letter: 
+        span Y
+        span W
+        span C
+        span D
+        span I
+        span G
+        span I
+        span T
+        span A
+        span L
+        span F
+        span O
+        span R
+        span A
+        span L
+        span L
+      .bottom
+        | Life: 100%
+    .section.start.active
+      .text
+        p 
+          | Target: Find the letter: 
+          span YWC DIGITAL FOR ALL
+        p 
+          | If you get any letter above, your life will be
+          span.plus  +5
+        p 
+          | or you get the other letter, Your life will be 
+          span.minus -4
+        .btn start game
+    .section.game
+      .character
+      .letter
+      .control-phone
+        .row
+          .top top
+          .left Left
+        .row
+          .bottom Bottom
+          .right Right
+       
+    .section.end
+      .text.active
+        p Excellent!
+        span You are great player.
+        .btn Again
+      .text 
+        p Sorry!
+        span Please prepare youself before play game.
+        .btn Again
 
-.slide
-  ul.img(moveauto-time="3000")
-    li.active(style="width: 1280px; background-image: url(images/slide.png)")
-    li(style="width: 1280px; background-image: url(https://static.pexels.com/photos/57018/pexels-photo-57018.jpeg)")
-  ul.pagi
-    li.active
-    li
-
-.wrapper
-  .search.flex
-    a(href="/searchbrand.html").flex-1
-      .box.middle-center.flex(style="background-image: url('images/keyboard.jpeg')")
-        h3 brands
-        p ค้นหาตามแบรนด์
-    a(href="/searchbrand.html").flex-1
-      .box.middle-center.flex(style="background-image: url('images/joy.jpeg')")
-        h3 equipment
-        p ค้นหาตามอุปกรณ์
-    a(href="/searchbrand.html").flex-1
-      .box.middle-center.flex(style="background-image: url('images/game.jpeg')")
-        h3 genre
-        p ค้นหาตามแนวเกม
-
-include footer
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    footer
+      p Keys: W A S D | Up Down Left Right to move
+      p 
+        | Note: You can not colliding with the white letter.
+        span _
